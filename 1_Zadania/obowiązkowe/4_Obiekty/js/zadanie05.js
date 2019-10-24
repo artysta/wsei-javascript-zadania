@@ -31,3 +31,11 @@ var animals = [
     }
 
 ]
+
+for (var tmp in animals) {
+  console.log(animals[tmp]);
+}
+
+for (var i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
