@@ -8,7 +8,36 @@ function callOtherFunction(nameOfFunction) {
 
 callOtherFunction(function (a, b) {
     console.log("Pierwsza liczba:", a);
-    console.log("Druga liczba", b)
-    console.log("Wynik", a + b)
+    console.log("Druga liczba", b);
+    console.log("Wynik dodawania", a + b);
 })
 
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b);
+    console.log("Wynik odejmowania", a - b);
+})
+
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b);
+    console.log("Wynik mnożenia", a * b);
+})
+
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b);
+
+    if (b != 0) {
+        console.log("Wynik dzielenia", a / b);
+    } else {
+      console.log("Błąd! Nie można dzielić przez 0!");
+    }
+})
+
+callOtherFunction(function (a, b) {
+    console.log("Pierwsza liczba:", a);
+    console.log("Druga liczba", b);
+    console.log("Kwadrat pierwszej liczby", a * a);
+    console.log("Kwadrat drugiej liczby", b * b);
+})

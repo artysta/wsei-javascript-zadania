@@ -5,21 +5,23 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+// Deklaracja funkcji "sortArray".
 function sortArray() {
 
-    //Twoj komentarz ...
+    // Deklaracja i inicjalizacja tablicy "points" zawierającej liczby.
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    // Wywołanie funkcji sortującej "sort" na tablicy "points".
+    // Funkcja "sort" przyjmuje jako parametr dwuparametrową funkcję zwracającą różnicę dwóch liczb. Pozwala to na ich prawidłowe posortowanie.
+    // Parametr w przypadku funkcji "sort" nie musi być podawany, jednak w takiej sytuacji dane (w tym przypadku liczby) zostaną posortowane alfabetycznie.
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        // Zwrócenie różnicy "a" i "b".
         return a - b;
     });
 
-    //Twoj komentarz ...
+    // Zwrócenie prawidłowo posortowanej tablicy "points".
     return points;
 }
 
-//Twoj komentarz ...
+// Wywołanie funkcji "sortArray".
 sortArray();
