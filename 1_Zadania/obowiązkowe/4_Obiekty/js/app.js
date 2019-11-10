@@ -78,7 +78,6 @@ for (var tmp in movie) {
 }
 
 // Zadanie 5.
-// Nie jestem pewien, czy aby na pewno o tego rodzaju wypisanie danych chodziło.
 var animals = [
     {
         type: "cat",
@@ -113,12 +112,10 @@ var animals = [
 
 ]
 
-for (var tmp in animals) {
-  console.log(animals[tmp]);
-}
-
-for (var i = 0; i < animals.length; i++) {
-  console.log(animals[i]);
+for (var i= 0; i < animals.length; i++) {
+  for (var key in animals) {
+    console.log(animals[key]);
+  }
 }
 
 // Zadanie 6.
