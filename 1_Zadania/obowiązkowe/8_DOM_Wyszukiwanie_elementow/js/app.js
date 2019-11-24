@@ -8,11 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
      var elementWithTitleClass = document.querySelector(".title");
 
      function getDataAnimation(element) {
-       var animation = element.getAttribute("data-animation");
+       // var animation = element.getAttribute("data-animation");
+       var animation = elementWithTitleClass.dataset.animation;
        return animation;
      }
 
-     getDataAnimation(elementWithTitleClass);
+     console.log(getDataAnimation(elementWithTitleClass));
 
      // Zadanie 1.
      // 1.1.
@@ -33,19 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
      // Zadanie 2.
      // 2.1.
      var allLiElementsWithinNavTag = document.querySelectorAll("nav li");
-     console.log(allLiElementsWithinNavTag.length);
+     console.log(allLiElementsWithinNavTag);
 
      // 2.2.
      var allParagraphElementsWithinDivTag = document.querySelectorAll("div p");
-     console.log(allParagraphElementsWithinDivTag.length);
+     console.log(allParagraphElementsWithinDivTag);
 
      // 2.3.
      var allDivsWithinArticleTag = document.querySelectorAll("article div");
-     console.log(allDivsWithinArticleTag.length);
+     console.log(allDivsWithinArticleTag);
 
      // Zadanie 3.
      // 3.1.
-     var articleTagsWithFirstClass = document.querySelectorAll("article[class=first]");
+     // var articleTagsWithFirstClass = document.querySelectorAll("article[class=first]");
+     var articleTagsWithFirstClass = document.querySelectorAll("article.first");
+     console.log(articleTagsWithFirstClass);
 
      // 3.2.
      for (var i = 0; i < articleTagsWithFirstClass.length; i++) {
