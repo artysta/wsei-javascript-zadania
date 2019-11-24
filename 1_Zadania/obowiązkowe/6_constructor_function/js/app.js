@@ -2,20 +2,19 @@
 function Basket() {
   this.products = [];
   this.sum = 0;
+}
 
-  this.addProduct = function(name, price) {
-    this.products.push(name);
-    this.sum += price;
-  }
+Basket.prototype.addProduct = function(name, price) {
+  this.products.push({name, price});
+  this.sum += price;
+}
 
-  this.showBasket = function() {
-    console.log("Products in basket: " + this.products);
-    console.log("Total price: " + this.sum);
-  }
+Basket.prototype.showBasket = function() {
+  console.log(this.products);
+  console.log(this.sum);
 }
 
 var myBasket = new Basket();
-
 myBasket.addProduct("Apple", 5);
 myBasket.addProduct("Banana", 10);
 myBasket.addProduct("Raspberry", 15);
@@ -47,7 +46,7 @@ Robot.prototype.fixIt = function () {
 };
 
 // Zadanie 2.
-function Calculator() {
+var Calculator = function() {
   this.history = [];
 }
 
@@ -91,6 +90,7 @@ Calculator.prototype.clearOperations = function() {
 }
 
 var calc = new Calculator();
+
 calc.add(2, 2);
 calc.multiply(2, 5);
 calc.substract(10, 2);
