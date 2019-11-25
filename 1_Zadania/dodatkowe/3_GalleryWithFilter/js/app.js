@@ -3,9 +3,9 @@
   Strona nie funkcjonuje tak jak należy ze względu na to, jak działa metoda indexOf,
   która zwraca liczę -1, jeśli w ogóle nie znajdzie poszukiwanej frazy i liczbę większą, jeśli ją znajdzie.
   Problem w tym, że w takiej sytuacji liczba większa lub równa 0 oznacza index początku poszukiwanej frazy.
-  Jeśli więc w przypadku tej strony wyszukamy frazę "bike", to uznana zostanie również fraza motorBIKE.
+  Jeśli więc w przypadku tej strony wyszukamy frazę "bike", to uznana zostanie również fraza "motorBIKE".
   Podobbnie wygląda to również w przypadku pojedynynczych liter, np. przy wpisaniu literki "l"
-  i kliknięciu hide, znikają wszystkie obrazki, ponieważ w każym przypadku dataset-tag zawiera tę literkę.
+  i kliknięciu "Hide", znikają wszystkie obrazki, ponieważ w każym przypadku "dataset-tag" zawiera tę literkę.
 */
 
 document.addEventListener("DOMContentLoaded", event => {
