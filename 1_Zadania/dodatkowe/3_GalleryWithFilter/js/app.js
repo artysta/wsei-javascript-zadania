@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", event => {
   var hideBtn = document.getElementById("hideButton");
   var input = document.getElementById("tagInput");
 
-  console.log(images[4].dataset.tag.indexOf("nightlife"));
-
   showBtn.addEventListener("click", event => {
     var tagName = input.value;
 
@@ -44,7 +42,6 @@ document.addEventListener("DOMContentLoaded", event => {
     for (var img of images) {
       if (img.dataset.tag.indexOf(tagName) >= 0) {
         if (!img.classList.contains("invisible")) {
-          console.log(img);
           img.classList.add("invisible");
         }
       }
