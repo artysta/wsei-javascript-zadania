@@ -5,7 +5,7 @@
   Problem w tym, że w takiej sytuacji liczba większa lub równa 0 oznacza index początku poszukiwanej frazy.
   Jeśli więc w przypadku tej strony wyszukamy frazę "bike", to uznana zostanie również fraza "motorBIKE".
   Podobbnie wygląda to również w przypadku pojedynynczych liter, np. przy wpisaniu literki "l"
-  i kliknięciu "Hide", znikają wszystkie obrazki, ponieważ w każym przypadku "dataset-tag" zawiera tę literkę.
+  i kliknięciu "Hide", znikają wszystkie obrazki, ponieważ w każym przypadku "data-tag" zawiera tę literkę.
 */
 
 document.addEventListener("DOMContentLoaded", event => {
