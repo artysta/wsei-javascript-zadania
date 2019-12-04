@@ -1,0 +1,15 @@
+{
+  "name": "13_arrow_functions",
+  "version": "1.0.0",
+  "description": "13_arrow_functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Adrian Kurek",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

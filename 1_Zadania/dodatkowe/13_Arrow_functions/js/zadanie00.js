@@ -20,4 +20,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	};
 
+	var Students = function(array) {
+		this.students = array;
+	}
+
+	// Zadanie 0.
+	var Students = function(array) {
+		 this.students = array;
+		 this.countLetters = function() {
+			this.numberOfLetters = this.students.map(name => name.length);
+		}
+	}
+
+	var students = new Students(["Ania", "Kamil", "Mariusz"]);
+	students.countLetters();
+	console.log(students.numberOfLetters); // [4, 5, 7]
 });
