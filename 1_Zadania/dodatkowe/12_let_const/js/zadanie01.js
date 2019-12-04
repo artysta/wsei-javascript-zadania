@@ -15,7 +15,7 @@ let numbers = [2, 3, 4];
 
 // A3 - wypisuję zmienną numbers za blokiem
 // Wynik w konsoli to: ReferenceError: numbers is not defined.
-// Dlaczego taki wynik? Jeżeli zmienna deklarowana jest w osobnym bloku kodu, to w przypadku zmiennej let ma ona wyłącznie jego zasięg, stąd też tutaj uważana jest za zdefiniowaną.
+// Dlaczego taki wynik? Jeżeli zmienna deklarowana jest w osobnym bloku kodu, to w przypadku zmiennej let ma ona wyłącznie jego zasięg - stąd też tutaj uważana jest za niezdefiniowaną.
 console.log(numbers);
 
 // II. Sprawdź teraz  zasięg const
@@ -34,5 +34,5 @@ const PI = 3.14;
 
 // A3 - wypisuję zmienną PI za blokiem
 // Wynik w konsoli to: ReferenceError: PI is not defined.
-// Dlaczego taki wynik? To samo co w przypadku zmiennej numbers. Jeżeli zmienna deklarowana jest w osobnym bloku kodu, to w przypadku zmiennej const ma ona wyłącznie jego zasięg, stąd też tutaj uważana jest za zdefiniowaną.
+// Dlaczego taki wynik? To samo co w przypadku zmiennej numbers. Jeżeli zmienna deklarowana jest w osobnym bloku kodu, to w przypadku zmiennej const ma ona wyłącznie jego zasięg - stąd też tutaj uważana jest za niezdefiniowaną.
 console.log(PI);

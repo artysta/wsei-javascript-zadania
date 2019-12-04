@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(i);
 
     for (let j = 0; j < 10; j++) {
-      console.log(k);
+      console.log(j);
     }
 
     // ReferenceError: j is not defined.
-    console.log(k);
+    console.log(j);
 
     // Zadanie 5.
     (function () {
