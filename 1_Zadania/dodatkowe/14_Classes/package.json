@@ -1,0 +1,15 @@
+{
+  "name": "14_classes",
+  "version": "1.0.0",
+  "description": "14_classes",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Adrian Kurek",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
