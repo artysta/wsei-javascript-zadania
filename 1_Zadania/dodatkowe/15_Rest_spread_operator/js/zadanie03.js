@@ -16,3 +16,15 @@ let people = [
         profession: "trener"
     }
 ];
+
+function setFunnyName(...args) {
+  args.forEach(p => people.push(p));
+}
+
+setFunnyName(
+  {person: "Tommy Shelby", profession: "bukmacher"},
+  {person: "Mr Robot", profession: "hakier"},
+  {person: "Dr House", profession: "doktor"}
+);
+
+console.log(people);
