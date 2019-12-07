@@ -1,0 +1,15 @@
+{
+  "name": "17_destructuring",
+  "version": "1.0.0",
+  "description": "17_destructuring",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Adrian Kurek",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
