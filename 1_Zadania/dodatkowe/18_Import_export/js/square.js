@@ -1,4 +1,4 @@
-
+import { Polygon } from "./polygon.js";
 
 class Square extends Polygon {
   constructor(dim = 5) {
@@ -6,3 +6,5 @@ class Square extends Polygon {
     this.name = 'Square';
   }
 }
+
+export { Square };

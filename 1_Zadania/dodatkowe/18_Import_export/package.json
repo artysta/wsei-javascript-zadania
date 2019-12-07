@@ -1,0 +1,15 @@
+{
+  "name": "18_import_export",
+  "version": "1.0.0",
+  "description": "18_import_export",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Adrian Kurek",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
