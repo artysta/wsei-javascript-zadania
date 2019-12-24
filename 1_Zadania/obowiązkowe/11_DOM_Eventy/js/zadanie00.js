@@ -10,3 +10,16 @@ for (var i = 0; i < parentElements.length; i++) {
     this.children[0].style.display = "none";
   });
 }
+
+// Zadanie 0b.
+
+for (var i = 0; i < parentElements.length; i++) {
+    parentElements[i].addEventListener("mouseleave", function() {
+
+        function hideChildrenElement(element){
+            element.firstElementChild.style.display='none';
+        }
+
+        hideChildrenElement(this);
+    })
+}
